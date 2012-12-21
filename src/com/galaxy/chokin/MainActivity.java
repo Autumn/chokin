@@ -11,11 +11,18 @@ import android.content.Context;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.view.View;
+import android.app.Notification;
+import android.app.Notification.Builder;
+import android.app.Notification.BigTextStyle;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 
 public class MainActivity extends Activity {
 
   private static final String FIRST_OPEN_KEY = "firstOpen";
   SharedPreferences prefs = null; 
+  int notifId = 1;
+
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -25,6 +32,14 @@ public class MainActivity extends Activity {
        prefs = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
 
     setContentView(R.layout.main);
+    
+    Notification notif = new Notification.BigTextStyle(
+        new Notification.Builder(this).setContentTitle("test").setContentText("test").setOngoing(true).setSmallIcon(R.drawable.ic_stat_notif)
+        .addAction(R.drawable.ic_stat_notif, "Add Purchase", PendingIntent.getActivity(this.getApplicationContext(), 0, new Intent(this, FloatingFragment.class), 0))).build();
+    NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+    mNotificationManager.notify(notifId, notif);
+
+    //
 
     if (!prefs.getBoolean(FIRST_OPEN_KEY, false)) {
       findViewById(R.id.first_open_layout).setVisibility(View.VISIBLE);
@@ -32,6 +47,7 @@ public class MainActivity extends Activity {
     } else {
       findViewById(R.id.first_open_layout).setVisibility(View.GONE);
       findViewById(R.id.pager).setVisibility(View.VISIBLE);
+      fillData();
     }
 
     checkFirstOpen();
@@ -46,6 +62,7 @@ public class MainActivity extends Activity {
     } else {
       findViewById(R.id.first_open_layout).setVisibility(View.GONE);
       findViewById(R.id.pager).setVisibility(View.VISIBLE);
+      fillData();
     }
   }
 
@@ -58,6 +75,10 @@ public class MainActivity extends Activity {
   
   public void openSettings(View v) {
     startActivity(new Intent(this, SetupActivity.class)); 
+  }
+
+  public void fillData() {
+
   }
   
 

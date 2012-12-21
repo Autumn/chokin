@@ -17,6 +17,11 @@
     <string name="first_open_caption">In order to start, Chokin requires you to answer some questions. Please tap the button below and enter the required information.</string>
     <string name="first_open_button">Enter Settings</string>
 
+    <string name="pager_week_spend_label">Week Spend</string>
+    <string name="pager_week_goal_label">Week Goal</string>
+    <string name="pager_week_spend_goal_percent_label">Spend Goal</string>
+    <string name="pager_total_save_label">Total Save</string>
+
     <string-array name="days_of_week">
       <item>Monday</item>
       <item>Tuesday</item>

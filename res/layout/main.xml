@@ -38,9 +38,60 @@
     android:layout_gravity="top"/>
 </android.support.v4.view.ViewPager>-->
 
-<TextView android:id="@+id/pager"
+<RelativeLayout android:id="@+id/pager"
   android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:text="test"/>
+  android:layout_height="wrap_content">
+  
+  <TextView android:id="@+id/pager_week_spend_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="@string/pager_week_spend_label"/>
+  <TextView android:id="@+id/pager_week_spend_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/pager_week_spend_label"
+    android:layout_alignBaseline="@+id/pager_week_spend_label"/>
+
+  <TextView android:id="@+id/pager_week_goal_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/pager_week_spend_label"
+    android:text="@string/pager_week_goal_label"/>
+  <TextView android:id="@+id/pager_week_goal_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pager_week_spend_label"
+    android:layout_toRightOf="@+id/pager_week_goal_label"
+    android:layout_alignBaseline="@+id/pager_week_goal_label"/>
+
+  <TextView android:id="@+id/pager_week_spend_goal_percent_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/pager_week_goal_label"
+    android:text="@string/pager_week_spend_goal_percent_label"/>
+  <TextView android:id="@+id/pager_week_spend_goal_percent_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pager_week_goal_label"
+    android:layout_toRightOf="@+id/pager_week_spend_goal_percent_label"
+    android:layout_alignBaseline="@+id/pager_week_spend_goal_percent_label"/>
+
+  <TextView android:id="@+id/pager_total_save_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_below="@+id/pager_week_spend_goal_percent_label"
+    android:text="@string/pager_total_save_label"/>
+  <TextView android:id="@+id/pager_total_save_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pager_save_goal_percent_label"
+    android:layout_toRightOf="@+id/pager_total_save_label"
+    android:layout_alignBaseline="@+id/pager_total_save_label"/>
+
+</RelativeLayout>
 
 </RelativeLayout>
