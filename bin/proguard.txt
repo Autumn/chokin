@@ -1,3 +1,9 @@
-# view AndroidManifest.xml #generated:7
+# view AndroidManifest.xml #generated:8
 -keep class com.galaxy.chokin.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.galaxy.chokin.SetupActivity { <init>(...); }
+
+# onClick res/layout/setup.xml #generated:97
+-keepclassmembers class * { *** finishSetup(...); }
 

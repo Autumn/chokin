@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <TextView android:id="@+id/setup_heading"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:text="@string/setup_heading" />
+  <TextView android:id="@+id/setup_caption"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_heading"
+    android:paddingBottom="5px"
+    android:textSize="15sp"
+    android:textStyle="italic"
+    android:text="@string/setup_caption"/>
+
+  <TextView android:id="@+id/setup_total_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_caption"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:text="@string/setup_total_label" />
+  <EditText android:id="@+id/setup_total_edit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_caption"
+    android:layout_toRightOf="@+id/setup_total_label"
+    android:layout_alignBaseline="@+id/setup_total_label"
+    android:inputType="number"
+    android:hint="@string/setup_total_hint" />
+
+   <TextView android:id="@+id/setup_goal_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_total_label"
+    android:paddingBottom="10px"
+    android:paddingTop="10px"
+    android:text="@string/setup_goal_label" />
+  <EditText android:id="@+id/setup_goal_edit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_total_label"
+    android:layout_toRightOf="@+id/setup_goal_label"
+    android:layout_alignBaseline="@+id/setup_goal_label"
+    android:inputType="number"
+    android:hint="@string/setup_goal_hint" />
+  
+  <TextView android:id="@+id/setup_weekly_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_goal_label"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:text="@string/setup_weekly_label" />
+  <EditText android:id="@+id/setup_weekly_edit"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_goal_label"
+    android:layout_toRightOf="@+id/setup_weekly_label"
+    android:layout_alignBaseline="@+id/setup_weekly_label"
+    android:inputType="number"
+    android:hint="@string/setup_weekly_hint" />
+
+  <TextView android:id="@+id/setup_payday_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_weekly_label"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:text="@string/setup_payday_label"/>
+  <Spinner android:id="@+id/setup_payday_choice"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/setup_payday_label"
+    android:layout_toRightOf="@+id/setup_payday_label"
+    android:layout_below="@+id/setup_weekly_label"/>
+
+
+  <TextView android:id="@+id/setup_weekstart_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_payday_label"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:text="@string/setup_days_label"/>
+  <Spinner android:id="@+id/setup_weekstart_choice"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/setup_weekstart_label"
+    android:layout_toRightOf="@+id/setup_weekstart_label"
+    android:layout_below="@+id/setup_payday_label"/>
+
+  <Button android:id="@+id/setup_finish_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/setup_weekstart_label"
+    android:paddingTop="10px"
+    android:onClick="finishSetup"
+    android:text="@string/setup_finish_text"/>
+
+</RelativeLayout>

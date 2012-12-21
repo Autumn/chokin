@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Chokin</string>
+    <string name="setup_heading">Welcome to Chokin!</string>
+    <string name="setup_caption">Set up Chokin by answering the questions below.</string>
+    <string name="setup_days_label">When is the start of the week?</string>
+    <string name="setup_total_label">How much money do you have now?</string>
+    <string name="setup_total_hint">$0</string>
+    <string name="setup_goal_label">How much money do you want to save?</string>
+    <string name="setup_goal_hint">$1000</string>
+    <string name="setup_weekly_label">How much money do you spend each week?</string>
+    <string name="setup_weekly_hint">$200</string>
+    <string name="setup_payday_label">On which day are you paid?</string>
+    <string name="setup_finish_text">Done</string>
+    <string name="setup_incomplete_notif">Please answer all the questions.</string>
+
+    <string-array name="days_of_week">
+      <item>Monday</item>
+      <item>Tuesday</item>
+      <item>Wednesday</item>
+      <item>Thursday</item>
+      <item>Friday</item>
+      <item>Saturday</item>
+      <item>Sunday</item>
+    </string-array>
 </resources>
