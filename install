@@ -1,1 +1,1 @@
-ant debug && adb uninstall com.galaxy.chokin && adb install bin/MainActivity-debug.apk
+ant clean && ant debug && adb uninstall com.galaxy.chokin && adb install bin/MainActivity-debug.apk

@@ -7,3 +7,7 @@
 # onClick res/layout/setup.xml #generated:97
 -keepclassmembers class * { *** finishSetup(...); }
 
+# onClick res/layout/first_open.xml #generated:18
+# onClick res/layout/main.xml #generated:23
+-keepclassmembers class * { *** openSettings(...); }
+

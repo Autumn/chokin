@@ -14,26 +14,36 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
-        public static final int setup_caption=0x7f050001;
-        public static final int setup_finish_button=0x7f05000c;
-        public static final int setup_goal_edit=0x7f050005;
-        public static final int setup_goal_label=0x7f050004;
-        public static final int setup_heading=0x7f050000;
-        public static final int setup_payday_choice=0x7f050009;
-        public static final int setup_payday_label=0x7f050008;
-        public static final int setup_total_edit=0x7f050003;
-        public static final int setup_total_label=0x7f050002;
-        public static final int setup_weekly_edit=0x7f050007;
-        public static final int setup_weekly_label=0x7f050006;
-        public static final int setup_weekstart_choice=0x7f05000b;
-        public static final int setup_weekstart_label=0x7f05000a;
+        public static final int first_open_button=0x7f050002;
+        public static final int first_open_caption=0x7f050001;
+        public static final int first_open_heading=0x7f050000;
+        public static final int first_open_layout=0x7f050003;
+        public static final int pager=0x7f050004;
+        public static final int setup_caption=0x7f050006;
+        public static final int setup_finish_button=0x7f050011;
+        public static final int setup_goal_edit=0x7f05000a;
+        public static final int setup_goal_label=0x7f050009;
+        public static final int setup_heading=0x7f050005;
+        public static final int setup_payday_choice=0x7f05000e;
+        public static final int setup_payday_label=0x7f05000d;
+        public static final int setup_total_edit=0x7f050008;
+        public static final int setup_total_label=0x7f050007;
+        public static final int setup_weekly_edit=0x7f05000c;
+        public static final int setup_weekly_label=0x7f05000b;
+        public static final int setup_weekstart_choice=0x7f050010;
+        public static final int setup_weekstart_label=0x7f05000f;
     }
     public static final class layout {
-        public static final int main=0x7f020000;
-        public static final int setup=0x7f020001;
+        public static final int first_open=0x7f020000;
+        public static final int first_open_fragment=0x7f020001;
+        public static final int main=0x7f020002;
+        public static final int setup=0x7f020003;
     }
     public static final class string {
         public static final int app_name=0x7f030000;
+        public static final int first_open_button=0x7f03000f;
+        public static final int first_open_caption=0x7f03000e;
+        public static final int first_open_heading=0x7f03000d;
         public static final int setup_caption=0x7f030002;
         public static final int setup_days_label=0x7f030003;
         public static final int setup_finish_text=0x7f03000b;

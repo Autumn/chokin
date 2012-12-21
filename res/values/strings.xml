@@ -13,6 +13,9 @@
     <string name="setup_payday_label">On which day are you paid?</string>
     <string name="setup_finish_text">Done</string>
     <string name="setup_incomplete_notif">Please answer all the questions.</string>
+    <string name="first_open_heading">Settings Incomplete!</string>
+    <string name="first_open_caption">In order to start, Chokin requires you to answer some questions. Please tap the button below and enter the required information.</string>
+    <string name="first_open_button">Enter Settings</string>
 
     <string-array name="days_of_week">
       <item>Monday</item>
