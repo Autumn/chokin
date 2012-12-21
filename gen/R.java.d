@@ -7,6 +7,7 @@
 /home/aki/code/android/chokin/res/drawable-hdpi-v11/ic_stat_notif.png \
 /home/aki/code/android/chokin/res/drawable-xhdpi/ic_stat_notif.png \
 /home/aki/code/android/chokin/res/drawable-ldpi-v9/ic_stat_notif.png \
+/home/aki/code/android/chokin/res/layout/fragment_pager_list.xml \
 /home/aki/code/android/chokin/res/layout/main.xml \
 /home/aki/code/android/chokin/res/layout/first_open_fragment.xml \
 /home/aki/code/android/chokin/res/layout/setup.xml \
